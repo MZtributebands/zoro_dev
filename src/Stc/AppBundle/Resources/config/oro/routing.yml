@@ -8,6 +8,11 @@ stc_venue_bundle:
     type: annotation
     prefix: /venue
 
+stc_contract_bundle:
+    resource: "@StcAppBundle/Controller/ContractController.php"
+    type: annotation
+    prefix: /contract
+
 #stc_band_bundle_api:
 #    resource: "@StcAppBundle/Controller/Api/Rest/BandController.php"
 #    type: rest

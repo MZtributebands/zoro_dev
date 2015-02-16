@@ -53,3 +53,31 @@ stc_venue_delete:
     permission: DELETE
     group_name: ""
     bindings: ~
+
+stc_contract_view:
+    type: entity
+    class: StcAppBundle:Venue
+    permission: VIEW
+    group_name: ""
+    bindings: ~
+
+stc_contract_create:
+    type: entity
+    class: StcAppBundle:Venue
+    permission: CREATE
+    group_name: ""
+    bindings: ~
+
+stc_contract_update:
+    type: entity
+    class: StcAppBundle:Venue
+    permission: EDIT
+    group_name: ""
+    bindings: ~
+
+stc_contract_delete:
+    type: entity
+    class: StcAppBundle:Venue
+    permission: DELETE
+    group_name: ""
+    bindings: ~

@@ -1,0 +1,27 @@
+{% extends "OroUIBundle:Default:twoColumnLeft.html.twig" %}
+
+{% set entityId = entity.getId() %}
+
+{% block sidebar %}
+    <div class="panel panel-primary">
+    <h3>Contract Info</h3>
+    <div style="font-weight: bold">
+        Contract Name : {{ entity.getName }} <br />
+        Location: {{ entity.getLocation }} <br />
+        Stage: {{ entity.getStage }} <br />
+        Travel?: {{ entity.getTravel }} <br />
+        Contract Type: {{ entity.getContractType }} <br />
+        Created At : {{ entity.getCreatedAt|date('m/d/y') }} <br />
+        Signed At : {{ entity.getSignedAt|date('m/d/y') }} <br />
+    </div>
+	</div>
+{% endblock %}
+
+{% block content %}
+	<div class="panel panel-primary">
+		<h3>Additional Contract Info</h3>
+		<div style="font-weight: bold; ">        
+			<h4>Performance Info</h4>
+		</div>
+	</div>
+{% endblock %}

@@ -12,6 +12,12 @@ oro_menu_config:
             extras:
                 icon: icon-building
                 position: 2
+        contract_tab:
+            label: Contracts
+            uri: '#'
+            extras:
+                icon: icon-edit
+                position: 5
         shortcut_band_item:
             label: View Bands
             route: stc_band_index
@@ -24,6 +30,12 @@ oro_menu_config:
         shortcut_venue_create:
             label: Create Venue
             route: stc_venue_create
+        shortcut_contract_item:
+            label: View Contracts
+            route: stc_contract_index
+        shortcut_contract_create:
+            label: Create Contract
+            route: stc_contract_create
     tree:
         application_menu:
             children:
@@ -35,3 +47,7 @@ oro_menu_config:
                     children:
                         shortcut_venue_item: ~
                         shortcut_venue_create: ~
+                contract_tab:
+                    children:
+                        shortcut_contract_item: ~
+                        shortcut_contract_create: ~
